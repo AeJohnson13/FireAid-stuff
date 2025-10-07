@@ -7,6 +7,9 @@ import pandas as pd
 import numpy as np
 
 input_file = 'InVariables.csv'
-inVariables = pd.DataFrame()
-inVariables.to_csv(input_file,index=False)
 
+inVariables = pd.DataFrame()
+
+inVariables = pd.read_csv(input_file)
+
+print(inVariables)
